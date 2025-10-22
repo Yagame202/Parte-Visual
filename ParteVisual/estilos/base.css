@@ -61,9 +61,41 @@ button:hover {
   right: 0;              
 }
 
-.imagem-direita img {
-  width: 400px;        
-  height: auto;         
-  opacity: 0.9;          
-  border-radius: 15px;   
+.carrosel {            
+  width: 450px;
+  position: absolute;   
+  right: 50px;          
+  top: 50%;             
+  transform: translateY(-50%);
+  overflow: hidden;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);         
+}
+
+.carrosel ul {
+  display: flex;
+  list-style: none;
+  width: 300%; 
+  padding: 0;
+}
+
+.carrosel li {
+  width: 450px;
+  position: relative;
+  animation: slide 15s infinite ease-out;
+}
+
+.carrosel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(0); }
+  35% { transform: translateX(-450px); }
+  65% { transform: translateX(-450px); }
+  70% { transform: translateX(-900px); }
+  95% { transform: translateX(-900px); }
+  100% { transform: translateX(0); }
 }
