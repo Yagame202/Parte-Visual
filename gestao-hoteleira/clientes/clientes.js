@@ -1,4 +1,3 @@
-// ...existing code...
 // Script relacionado ao módulo de pessoas
 
 // Array principal armazenado no navegador
@@ -194,3 +193,4 @@ function resetarForm() {
         document.querySelector('#campo-05').value = "";
     }
 }
+
