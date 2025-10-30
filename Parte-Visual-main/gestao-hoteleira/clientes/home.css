@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(135deg, #695037, #886949);
+  color: #fff;
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecario {
+  text-align: center;
+  margin-top: 65px;
+}
+
+.centro {
+  text-align: center;
+}
+
+.centro {
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.centro h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #fff;
+  color: #0078d7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: url('https://w7.pngwing.com/pngs/340/786/png-transparent-presidente-jair-bolsonaro.png') 16 16, auto; /* essa bosta n ta dando para colocar a foto do mestre */
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00a2ff;
+  color: #fff;
+}
+
+.imagem-direita {
+  position: absolute;    
+  top: 50%;             
+  right: 0;              
+}
+
+.carrosel {            
+  width: 450px;
+  position: absolute;   
+  right: 50px;          
+  top: 50%;             
+  transform: translateY(-50%);
+  overflow: hidden;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);         
+}
+
+.carrosel ul {
+  display: flex;
+  list-style: none;
+  width: 300%; 
+  padding: 0;
+}
+
+.carrosel li {
+  width: 450px;
+  position: relative;
+  animation: slide 15s infinite ease-out;
+}
+
+.carrosel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(0); }
+  35% { transform: translateX(-450px); }
+  65% { transform: translateX(-450px); }
+  70% { transform: translateX(-900px); }
+  95% { transform: translateX(-900px); }
+  100% { transform: translateX(0); }
+}
